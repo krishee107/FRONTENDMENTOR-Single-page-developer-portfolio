@@ -4,85 +4,176 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
 <body>
 
-  adamkeyes
+  <div class="main">
+    <header>
+      <div class="logo">adamkeyes</div>
+      <div class="redes">
+        <div class="red"><img src="./assets/images/icon-github.svg" alt="Github"></div>
+        <div class="red"><img src="./assets/images/icon-frontend-mentor.svg" alt="Frontendmentor"></div>
+        <div class="red"><img src="./assets/images/icon-linkedin.svg" alt="Linkedin"></div>
+        <div class="red"><img src="./assets/images/icon-twitter.svg" alt="Twitter"></div>
+      </div>
+    </header>
 
-  Nice to meet you! I'm Adam Keyes.
+    <section class="hero">
+      <div class="hero_information">
+        <h1>Nice to meet you!</h1>
+        <h1>I’m <span>Adam Keyes.</span></h1>
+        <p>Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
+        <div class="link">CONTACT ME</div>
+      </div>
 
-  Based in the UK, I'm a front-end developer passionate about 
-  building accessible web apps that users love.
+      <div class="profile_img">
+        <picture>
+          <source srcset="./assets/images/image-profile-desktop.webp" media="(min-width: 900px)">
+          <source srcset="./assets/images/image-profile-tablet.webp" media="(min-width: 600px)">
+          <img src="./assets/images/image-profile-mobile.webp" alt="Profile image">
+        </picture>
+      </div>
+    </section>
 
-  Contact me
+    <section class="skills">
+      <div cla-ss="skill">
+        <h2 class="skill_title">HTML</h2>
+        <div class="skill_exp">4 Years Experience</div>
+      </div>
 
-  HTML
-  4 Years Experience
+      <div cla-ss="skill">
+        <h2 class="skill_title">CSS</h2>
+        <div class="skill_exp">4 Years Experience</div>
+      </div>
 
-  CSS
-  4 Years Experience
+      <div cla-ss="skill">
+        <h2 class="skill_title">JavaScript</h2>
+        <div class="skill_exp">4 Years Experience</div>
+      </div>
 
-  JavaScript
-  4 Years Experience
+      <div cla-ss="skill">
+        <h2 class="skill_title">Accessibility</h2>
+        <div class="skill_exp">4 Years Experience</div>
+      </div>
 
-  Accessibility
-  4 Years Experience
+      <div cla-ss="skill">
+        <h2 class="skill_title">React</h2>
+        <div class="skill_exp">3 Years Experience</div>
+      </div>
 
-  React
-  3 Years Experience
+      <div cla-ss="skill">
+        <h2 class="skill_title">Sass</h2>
+        <div class="skill_exp">3 Years Experience</div>
+      </div>
+    </section>
 
-  Sass
-  3 Years Experience
+    <section class="projects">
+      <div class="projects_header">
+        <h1>Projects</h1>
+        <div class="link">CONTACT ME</div>
+      </div>
+      
+      <div class="projects_list">
+        <!-- Project -->
+        <div class="project">
+          <div class="project_img"></div>
+          <div class="project_title">Design portfolio</div>
+          <div class="project_technology">
+            <div class="technology">HTML</div>
+            <div class="technology">CSS</div>
+          </div>
+        </div>
+        
+        <!-- Project -->
+        <div class="project">
+          <div class="project_img"></div>
+          <div class="project_title">E-learning landing page</div>
+          <div class="project_technology">
+            <div class="technology">HTML </div>
+            <div class="technology">CSS</div>
+          </div>
+        </div>
 
-  Projects
+        <!-- Project -->
+        <div class="project">
+          <div class="project_img"></div>
+          <div class="project_title">Todo web app</div>
+          <div class="project_technology">
+            <div class="technology">HTML  </div>
+            <div class="technology">CSS</div>
+            <div class="technology">JavaScript</div>
+          </div>
+        </div>
+          
+        <!-- Project -->
+        <div class="project">
+          <div class="project_img"></div>
+          <div class="project_title">Entertainment web app</div>
+          <div class="project_technology">
+            <div class="technology">HTML</div>
+            <div class="technology">CSS</div>
+            <div class="technology">JavaScript</div>
+          </div>
+        </div>  
 
-  Contact me
+        <!-- Project -->
+        <div class="project">
+          <div class="project_img"></div>
+          <div class="project_title">Memory Game</div>
+          <div class="project_technology">
+            <div class="technology">HTML</div>
+            <div class="technology">CSS</div>
+            <div class="technology">JavaScript</div>
+          </div>
+        </div>
 
-  Design portfolio
-  HTML CSS
+        <!-- Project -->
+        <div class="project">
+          <div class="project_img"></div>
+          <div class="project_title">Art gallery showcase</div>
+          <div class="project_technology">
+            <div class="technology">HTML</div>
+            <div class="technology">CSS</div>
+            <div class="technology">JavaScript</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact_info">
+        <h1>Contact</h1>
+        <p>I would love to hear about your project and how I could help. Please 
+          fill in the form, and I’ll get back to you as soon as possible.</p>
+      </div>
+      <form>
+        <input type="text" required placeholder="NAME">
+        <input type="email" required placeholder="EMAIL">
+        <input type="text" required placeholder="MESSAGE">
+
+        <button class="link btn_send">Send message</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="logo">adamkeyes</div>
+      <div class="redes">
+        <div class="red"><img src="./assets/images/icon-github.svg" alt="Github"></div>
+        <div class="red"><img src="./assets/images/icon-frontend-mentor.svg" alt="Frontendmentor"></div>
+        <div class="red"><img src="./assets/images/icon-linkedin.svg" alt="Linkedin"></div>
+        <div class="red"><img src="./assets/images/icon-twitter.svg" alt="Twitter"></div>
+      </div>
+    </footer>
+  </div>
+
   View project
   View code
 
-  E-learning landing page
-  HTML CSS
-  View project
-  View code
-
-  Todo web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Entertainment web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Memory Game
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Art gallery showcase
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Contact
-
-  I would love to hear about your project and how I could help. Please 
-  fill in the form, and I’ll get back to you as soon as possible.
-
-  Name
-  Email
-  Message
-
-  Send message
-
-  adamkeyes
+  
 
 </body>
 </html>
