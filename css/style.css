@@ -138,6 +138,49 @@ p {
     color: var(--color4);
     font-size: 16px;
 }
+/* Projects */
+.projects_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects .link {margin: unset;}
+
+.projects_list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.project_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.project_technology {
+    display: flex;
+    gap: 19px;
+    padding-bottom: 20px;
+}
+
+.project_img {
+    width: 343px;
+    height: 253px;
+}
+
+.project_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.project_actions {
+    display: flex;
+    gap: 30px;
+}
 
 /* Desktop */
 @media (min-width:1040px) {
