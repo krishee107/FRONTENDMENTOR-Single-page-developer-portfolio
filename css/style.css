@@ -66,6 +66,8 @@ h1 {
     color: var(--color2);
 }
 
+/* Content */
+.main {padding: 0 15px;}
 
 /* Header */
 header {
@@ -87,6 +89,8 @@ header {
     flex-direction: column;
     margin-top: -100px;
     max-width: 350px;
+    border-bottom: 1px var(--color5) solid;
+    padding-bottom: 80px;
 }
 h1 span {border-bottom: 3px solid var(--color2);}
 
@@ -109,6 +113,31 @@ p {
 
 .hero_information {order: 2;}
 
+/*Skills */
+
+.skills {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px;
+    border-bottom: 1px var(--color5) solid;
+}
+
+.skill_title {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+.skill_exp {
+    font-weight: 500;
+    line-height: 26px;
+    color: var(--color4);
+    font-size: 16px;
+}
 
 /* Desktop */
 @media (min-width:1040px) {
