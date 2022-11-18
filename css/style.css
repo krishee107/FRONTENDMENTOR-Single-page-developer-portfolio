@@ -5,7 +5,7 @@
  /* Colores */
     --color1:#151515;
     --color2:#4EE1A0;
-    --color3:#d9d9d9;
+    --color3:#242424;
     --color4:#d9d9d9;
     --color5:#FFFFFF;
 
@@ -67,7 +67,7 @@ h1 {
 }
 
 /* Content */
-.main {padding: 0 15px;}
+.main {/* padding: 0 15px; */}
 
 /* Header */
 header {
@@ -91,6 +91,7 @@ header {
     max-width: 350px;
     border-bottom: 1px var(--color5) solid;
     padding-bottom: 80px;
+    width: 95%;
 }
 h1 span {border-bottom: 3px solid var(--color2);}
 
@@ -120,8 +121,10 @@ p {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding: 40px;
+    padding: 40px 0;
     border-bottom: 1px var(--color5) solid;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .skill_title {
@@ -139,6 +142,11 @@ p {
     font-size: 16px;
 }
 /* Projects */
+.projects {
+    width: 95%;
+    margin: 0 auto;
+}
+
 .projects_header {
     display: flex;
     align-items: center;
@@ -168,8 +176,8 @@ p {
 }
 
 .project_img {
-    width: 343px;
-    height: 253px;
+    max-width: 343px;
+    max-height: 253px;
 }
 
 .project_img img {
@@ -181,6 +189,71 @@ p {
     display: flex;
     gap: 30px;
 }
+
+/* contact */
+.contact {
+    background: var(--color3);
+    padding: 60px 16px;
+    margin-top: 80px;
+    background-image: url(../assets/images/pattern-rings.svg);
+    background-repeat: no-repeat;
+    background-position-x: -343px;
+    background-position-y: center;
+}
+.contact_info h1 {margin: 0;}
+
+input {
+    background: none;
+    border: none;
+    border-bottom: solid 1px var(--color5);
+    padding: 0 10px;
+    height: 43px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    letter-spacing: -0.23px;
+    opacity: 0.5;
+    color: var(--color5);
+    font-family: 'Space Grotesk';
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.message {height: 107px;}
+
+input.message::placeholder {
+    position: absolute;
+}
+
+.btn_send {
+    background: unset;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: fit-content;
+    align-self: end;
+    margin: unset;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 39px;
+    background: var(--color3);
+}
+
+.red {max-width: 20px;}
+.red img {width: 100%;}
 
 /* Desktop */
 @media (min-width:1040px) {
