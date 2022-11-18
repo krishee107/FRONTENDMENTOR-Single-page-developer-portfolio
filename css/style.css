@@ -264,12 +264,15 @@ footer {
 
 /* Tablet */
 @media (min-width:550px) {
+
+    /* Content */
     .main {
         padding: 30px;
         z-index: 3;
         position: relative;
     }
     
+    /* Header */
     header {
         display: flex;
         justify-content: space-between;
@@ -289,6 +292,8 @@ footer {
     section {
         width: 100% !important;
     }
+
+    /* Hero */
     
     .hero {
         align-items: center;
@@ -337,6 +342,15 @@ footer {
     }
     
     .hero .link {margin: unset;}
+
+    /* Skills */
+    .skills {
+    all: unset;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 52px;
+    row-gap: 52px;
+}
 }
 /* Desktop */
 @media (min-width:1040px) {
