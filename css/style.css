@@ -176,8 +176,8 @@ p {
 }
 
 .project_img {
-    max-width: 343px;
     max-height: 253px;
+    width: 100%;
 }
 
 .project_img img {
