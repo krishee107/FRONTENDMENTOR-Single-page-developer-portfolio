@@ -83,6 +83,10 @@ header {
     letter-spacing: -0.33px;
 }
 
+footer .logo {
+    padding-bottom: 20px;
+}
+
 .redes {
     display: flex;
     justify-content: center;
@@ -151,7 +155,7 @@ p {
 }
 /* Projects */
 .projects {
-    width: 95%;
+    /* width: 95%; */
     margin: 0 auto;
 }
 
@@ -186,6 +190,7 @@ p {
 .project_img {
     max-height: 253px;
     width: 100%;
+    overflow: hidden;
 }
 
 .project_img img {
@@ -198,15 +203,21 @@ p {
     gap: 30px;
 }
 
+.bottom_box {
+        background: var(--color3);
+        margin-top: 80px;
+        background-image: url(../assets/images/pattern-rings.svg);
+        background-repeat: no-repeat;
+        background-position-x: -343px;
+        background-position-y: center;
+        padding: 60px 16px;
+}
+
+
 /* contact */
 .contact {
-    background: var(--color3);
-    padding: 60px 16px;
-    margin-top: 80px;
-    background-image: url(../assets/images/pattern-rings.svg);
-    background-repeat: no-repeat;
-    background-position-x: -343px;
-    background-position-y: center;
+    padding-bottom: 87px;
+    border-bottom: 1px solid white;
 }
 .contact_info h1 {margin: 0;}
 
@@ -285,7 +296,7 @@ footer {
     
     .logo {
         font-size: 32px;
-        letter-spacing: -0.44;
+        letter-spacing: -0.44px;
     }
     .redes {
         padding: 0;
@@ -369,7 +380,7 @@ footer {
 /* Tablet */
 
 @media (min-width: 424px) {
-    .main {padding: 0;}
+    .main {padding: 0 16px;}
 }
 
 /* Desktop */
@@ -419,16 +430,34 @@ footer {
     .skill_title {padding-bottom: 14px;}
 
     /* Project */
+    .projects {width: 100%;}
+    
     .project_img {
-        width: 500px;
-        height: 400px;
+        max-width: 500px;
+        max-height: 400px;
         max-height: unset;
+    }
+
+    .bottom_box {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        background: var(--color3);
+        margin-top: 80px;
+        background-image: url(../assets/images/pattern-rings.svg);
+        background-repeat: no-repeat;
+        background-position-x: -343px;
+        background-position-y: center;
     }
 
     /*Contact*/
     .contact {
         display: grid;
         grid-template-columns: 50% 50%;
+        max-width: 1024px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 60px 16px;
     }
 
 
@@ -436,5 +465,11 @@ footer {
     footer {
         flex-direction: row;
         justify-content: space-between;
+        max-width: 1024px;
+        margin: 0 auto;
+        width: 90%;
+        padding: 51px 0;
     }
+
+    
 }
