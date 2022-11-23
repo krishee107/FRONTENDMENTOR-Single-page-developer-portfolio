@@ -198,6 +198,12 @@ p {
     height: 100%;
 }
 
+.project_img img:hover {
+    opacity: 0.5;
+}
+
+
+
 .project_actions {
     display: flex;
     gap: 30px;
@@ -227,6 +233,10 @@ input {
     border-bottom: solid 1px var(--color5);
     padding: 0 10px;
     height: 43px;
+}
+input:focus {
+   outline: none; 
+    border-color:var(--color2)
 }
 
 input::placeholder {
@@ -274,6 +284,10 @@ footer {
 
 .red {max-width: 20px;}
 .red img {width: 100%;}
+
+.red img:hover {
+    cursor: pointer;
+}
 
 /* Tablet */
 @media (min-width:550px) {
@@ -430,12 +444,27 @@ footer {
     .skill_title {padding-bottom: 14px;}
 
     /* Project */
+    .project {position: relative;}
+
     .projects {width: 100%;}
-    
     .project_img {
         max-width: 500px;
         max-height: 400px;
-        max-height: unset;
+    }
+
+    .project_img:hover ~ .project_actions, .project_actions:hover{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        align-items: center;
+        position: absolute;
+        left: 35%;
+        top: 138px;
+    }
+    
+    .project_actions { display: none}
+    .project_actions:hover ~  .project_img{
+        opacity: 0.5;
     }
 
     .bottom_box {
